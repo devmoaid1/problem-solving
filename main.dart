@@ -1,5 +1,14 @@
-import 'problems/random_numbers_sort.dart';
+import 'data_structures/linked_list.dart';
 
 void main() {
-  print(twoSum([2, 9, 8, 4], 12));
+  LinkedList<int> numbersLinkedList = LinkedList<int>();
+
+  final thirdNum = Node<int>(2);
+  final secondNum = Node<int>(1);
+  final head = Node<int>(0);
+
+  numbersLinkedList.addItem(head, secondNum);
+  numbersLinkedList.addItem(head, thirdNum);
+
+  print("head next is ${secondNum.next!.data} ");
 }
